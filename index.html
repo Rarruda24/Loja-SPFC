@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja São Paulo FC</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="IMAGEM/logo.png" alt="São Paulo FC Logo">
+        </div>
+        <h1>SÃO PAULO FC</h1>
+        <div class="cart">
+            <button id="cart-btn"><i class="fas fa-shopping-cart"></i> (0)</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="products">
+            <div class="product">
+                <img src="IMAGEM/camiseta 2025.webp" alt="Camiseta">
+                <h2>CAMISETA SÃO PAULO - MODELO 1</h2>
+                <p>R$ 149,99</p>
+                <button class="add-to-cart" data-product="Camiseta São Paulo - Modelo 1" data-price="149.99" data-image="IMAGEM/camiseta 2025.webp">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="IMAGEM/CAMISETA 2.jpg" alt="Camiseta">
+                <h2>CAMISETA SÃO PAULO - MODELO 2</h2>
+                <p>R$ 179,99</p>
+                <button class="add-to-cart" data-product="Camiseta São Paulo - Modelo 2" data-price="179.99" data-image="IMAGEM/CAMISETA 2.jpg">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="IMAGEM/jaqueta-do-sao-paulo-under-armour-full-masculina-img.webp" alt="Jaqueta">
+                <h2>JAQUETA SÃO PAULO</h2>
+                <p>R$ 499,99</p>
+                <button class="add-to-cart" data-product="Jaqueta São Paulo" data-price="499.99" data-image="IMAGEM/jaqueta-do-sao-paulo-under-armour-full-masculina-img.webp">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="IMAGEM/bone_new_era_sao_paulo_spfc_940_preto_132376_2_04b22c98834703624bb9d41d80c3c4ef.webp" alt="Boné">
+                <h2>BONÉ SÃO PAULO FUTEBOL CLUBE</h2>
+                <p>R$ 149,99</p>
+                <button class="add-to-cart" data-product="Boné São Paulo" data-price="149.99" data-image="IMAGEM/bone_new_era_sao_paulo_spfc_940_preto_132376_2_04b22c98834703624bb9d41d80c3c4ef.webp">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="IMAGEM/Terceira-camisa-do-Sao-Paulo-FC-2023-Adidas-5.jpg" alt="CAMISETA 3">
+                <h2>CAMISETA 3 SPFC 2023</h2>
+                <p>R$ 129,99</p>
+                <button class="add-to-cart" data-product="Cachecol São Paulo" data-price="129.99" data-image="IMAGEM/Terceira-camisa-do-Sao-Paulo-FC-2023-Adidas-5.jpg">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="IMAGEM/almofada_decorativa_25x25_personalizado_cheias_sao_paulo_fc_1570728059_3a31_600x600.jpg" alt="Almofada">
+                <h2>ALMOFADA SÃO PAULO TRICOLOR</h2>
+                <p>R$ 119,99</p>
+                <button class="add-to-cart" data-product="Almofada São Paulo" data-price="119.99" data-image="IMAGEM/almofada_decorativa_25x25_personalizado_cheias_sao_paulo_fc_1570728059_3a31_600x600.jpg">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="IMAGEM/toca spfc.webp" alt="Almofada">
+                <h2> GORRO TRICOLOR UNISEX PRETO</h2>
+                <p>R$ 79,99</p>
+                <button class="add-to-cart" data-product="Almofada São Paulo" data-price="79.99" data-image="IMAGEM/toca spfc.webp">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="IMAGEM/camiseta feminina outubro rosa.webp" alt="CAMISETA FEMININA OUTUBRO ROSA">
+                <h2>CAMISETA FEMININA OUTUBRO ROSA</h2>
+                <p>R$ 357,99</p>
+                <button class="add-to-cart" data-product="Almofada São Paulo" data-price="357.99" data-image="IMAGEM/camiseta feminina outubro rosa.webp">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        
+        <div class="payment-section">
+            <h2>Forma de Pagamento</h2>
+            <div class="payment-methods">
+                <label class="payment-option" for="pix">
+                    <input type="radio" id="pix" name="payment-method" value="pix">
+                    <span class="payment-icon"><i class="fab fa-cc-pix"></i></span>
+                    <span class="payment-label">PIX</span>
+                </label>
+
+                <label class="payment-option" for="debit">
+                    <input type="radio" id="debit" name="payment-method" value="debit">
+                    <span class="payment-icon"><i class="fas fa-credit-card"></i></span>
+                    <span class="payment-label">Cartão de Débito</span>
+                </label>
+
+                <label class="payment-option" for="credit">
+                    <input type="radio" id="credit" name="payment-method" value="credit">
+                    <span class="payment-icon"><i class="fas fa-credit-card"></i></span>
+                    <span class="payment-label">Cartão de Crédito</span>
+                </label>
+            </div>
+
+            <div class="installments-section">
+                <label for="installments-count">Parcelar em:</label>
+                <select id="installments-count">
+                    <option value="1">1x</option>
+                    <option value="2">2x</option>
+                    <option value="3">3x</option>
+                    <option value="4">4x</option>
+                    <option value="5">5x</option>
+                    <option value="6">6x</option>
+                    <option value="7">7x</option>
+                    <option value="8">8x</option>
+                    <option value="9">9x</option>
+                    <option value="10">10x</option>
+                    <option value="11">11x</option>
+                    <option value="12">12x</option>
+                </select>
+            </div>
+
+            <button id="checkout-btn">Finalizar Compra</button>
+        </div>
+    </main>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <h2>Carrinho de Compras</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: R$ <span id="cart-total">0,00</span></p>
+            <button id="close-cart">Fechar</button>
+        </div>
+    </div>
+
+<div id="thank-you-modal" class="thank-you-modal">
+    <div class="thank-you-content">
+        <img src="IMAGEM/logo.png" alt="São Paulo FC Logo" class="thank-you-logo">
+        <p class="thank-you-message">
+            O São Paulo Futebol Clube agradece sua compra,<br>
+            nosso maior ídolo é o torcedor!
+        </p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
